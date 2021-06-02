@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longue</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js">
+    </script>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <nav>
+        <h2 class="longue-title">The Longue</h2>
+        <ul class="nav-list">
+          <li class="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="contact">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="sign-up">
+            <a href="#signup" id="signup-button">Join us!</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1">
+          </div>
+          <div class="line2">
+          </div>
+          <div class="line3">
+          </div>
+        </div>
+    </header>
+
+<!-- ===== RANDOM NUMBER GENERATOR ===== -->
+  <div class="rng-container">
+    <h1>Generate random number within a range starting from 1</h1>
+    <form id="rng-input-form" class="rng-form">
+      <input type="number" id="rng-max-id" name="rng-max" max="9999999999999999999" placeholder="Maximum value" required/>
+      <button type="button" onclick="getNumber()">Enter</button>
+    </form>
+    <button type="button" onclick="generate(1, rng_max)" class="rng-button">
+      GENERATE
+    </button>
+    <div id="rng-output">
+      <h1 id="rngnumber"></h1>
+    </div>
+    <button type="button" onclick="clearsect()" class="rng-button">
+      CLEAR
+    </button>
+  </div>
+
+  </body>
+</html>
